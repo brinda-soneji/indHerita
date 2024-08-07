@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festivals</title>
+    <link rel="stylesheet" href="festivals.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" >
+</head>
+<body>
+    <h1>
+        Indian Festivals
+    </h1>
+    <hr>
+    <div class="data">
+      <p class="desc">
+        To see the list of upcoming Festivals, select a date:
+        <input type="date" id="date-input" /><br>
+    <button id="submit-date">Get Upcoming Festivals</button>
+      </p>
+    </div>
+    <hr>
+    <div class="timeline">
+      <a href="lohri.html">
+        <div class="container left" data-aos="fade-right" data-aos-duration="400">
+          <div class="content">
+            <h2>Lohri</h2>
+            <p>14 Jan 2024</p>
+          </div>
+        </div></a>
+      <a href="makarsankranti.html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="400">
+          <div class="content">
+            <h2>Makar Sankranti</h2>
+            <p>14 Jan 2024</p>
+          </div>
+        </div></a>
+      <a href="pongal.html">
+        <div class="container left" data-aos="fade-right" data-aos-duration="400">
+          <div class="content">
+            <h2>Pongal </h2>
+            <p>15 Jan-18Jan 2024</p>
+          </div>
+        </div></a>
+      <a href="mahashivratri.html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="400">
+          <div class="content">
+            <h2>Maha Shivaratri</h2>
+            <p>8 Mar 2024</p>
+          </div>
+         </div></a>
+      <a href="holi.html">
+          <div class="container left" data-aos="fade-right" data-aos-duration="400">
+            <div class="content">
+              <h2>Holi</h2>
+              <p>25 Mar 2024</p>
+            </div>
+          </div></a>
+      <a href="ugadi.html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="400">
+          <div class="content">
+            <h2>Ugadi </h2>
+            <p>9 Apr 2024</p>
+          </div>
+        </div></a>
+      <a href="eid.html">
+        <div class="container left" data-aos="fade-right" data-aos-duration="400">
+          <div class="content">
+            <h2>Eid-Ul-Fitr</h2>
+            <p>10 Apr 2024</p>
+          </div>
+        </div></a>
+      <a href="baisakhi.html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="300">
+          <div class="content">
+            <h2>Baisakhi</h2>
+            <p>14 Apr 2024</p>
+          </div>
+        </div></a>
+      <a href="vishu.html">
+        <div class="container left" data-aos="fade-right" data-aos-duration="300">
+          <div class="content">
+             <h2>Vishu</h2>
+              <p>14 Apr 2024</p>
+          </div>
+        </div></a>
+      <a href="bihu festival .html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="300">
+          <div class="content">
+            <h2>Bihu</h2>
+            <p>14 Apr 2024</p>
+          </div>
+        </div></a>
+      <a href="rakshabandhan.html">
+        <div class="container left" data-aos="fade-right" data-aos-duration="300">
+          <div class="content">
+            <h2>Rakshabandhan</h2>
+            <p>19 Aug 2024</p>
+          </div>
+        </div></a>
+      <a href="makarsankranti.html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="300">
+          <div class="content">
+            <h2>Janmashtami</h2>
+            <p>26 Aug 2024</p>
+          </div>
+        </div></a>
+      <a href="ganeshchaturthi.html">
+        <div class="container left" data-aos="fade-right" data-aos-duration="300">
+          <div class="content">
+            <h2>Ganesh Chaturthi</h2>
+            <p>7 Sept 2024</p>
+          </div>
+        </div></a>
+      <a href="navratri .html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="300">
+          <div class="content">
+            <h2>Navratri</h2>
+            <p>3 Oct- 12 Oct 2024</p>
+          </div>
+        </div></a>
+      <a href="durgapuja.html">
+        <div class="container left" data-aos="fade-right" data-aos-duration="300">
+          <div class="content">
+            <h2>Durga Puja</h2>
+            <p>9 Oct-13 Oct 2024 </p>
+          </div>
+        </div></a>
+      <a href="diwali.html">
+        <div class="container right" data-aos="fade-left" data-aos-duration="300">
+          <div class="content">
+            <h2>Diwali</h2>
+            <p>31 Oct 2024 </p>
+          </div>
+        </div></a>
+      </div>
+      <hr>
+      <div class="data">
+      <p class="desc">
+        Many of India’s biggest festivals are religious and follow either the Hindu lunar calendar or the Islamic calendar. The dates may change each year, but the fervour of celebration never does.
+      </p></div>
+      <hr>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      
+    <script>
+      AOS.init();
+      const dateInput = document.getElementById('date-input');
+        const submitButton = document.getElementById('submit-date');
+
+        submitButton.addEventListener('click', () => {
+            const date = dateInput.value;
+            window.open(`upcoming-festivals.html?date=${date}`, '_blank');
+        });
+    </script>
+</body>
+</html>
